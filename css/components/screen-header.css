@@ -1,0 +1,40 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--horizontal-space);
+  margin-bottom: 0px;
+}
+
+.screen-header__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.screen-header__icon span {
+  margin-left: 25px;
+}
+
+.gear__alarm {
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  display: flex;
+  position: absolute;
+  right: 25px;
+  top: 50px;
+}
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icon .fa-gear:hover {
+  animation: rotateCog 1s linear infinite;
+}

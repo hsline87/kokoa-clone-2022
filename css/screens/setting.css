@@ -1,0 +1,41 @@
+.alt-header {
+  padding: var(--horizontal-space);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alt-header__title {
+  font-size: 32px;
+}
+
+.alt-header__column:first-child {
+  margin-right: auto;
+}
+
+.alt-header__column:last-child {
+  margin-left: auto;
+}
+
+.setting-list {
+  list-style: none;
+  margin-left: -30px;
+}
+
+.settings-setting {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--black);
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings-setting i {
+  margin-right: 10px;
+}
+
+.setting__Setting-column:last-child {
+  opacity: 0.5;
+}
